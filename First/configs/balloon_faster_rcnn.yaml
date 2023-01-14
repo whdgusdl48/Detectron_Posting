@@ -1,0 +1,15 @@
+DATASETS:
+  TRAIN: ("balloon_train", )
+  TEST: ()
+DATALOADER:
+  NUM_WORKERS: 2
+MODEL:
+  WEIGHTS: "https://dl.fbaipublicfiles.com/detectron2/COCO-Detection/faster_rcnn_R_50_FPN_1x/137257794/model_final_b275ba.pkl"
+  ROI_HEADS:
+    BATCH_SIZE_PER_IMAGE: 128
+    NUM_CLASSES: 1
+SOLVER:
+  IMS_PER_BATCH: 2
+  BASE_LR: 0.00025
+  MAX_ITER: 300
+  
